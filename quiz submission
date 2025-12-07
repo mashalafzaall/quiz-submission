@@ -1,0 +1,28 @@
+#include <iostream>
+using namespace std;
+int main()
+{
+    int n;
+    float cost,discount,total1,total;
+    cout<<"enter number of clients: ";
+    cin>>n;
+    cout<<"enter monthly training cost: ";
+    cin>>cost;
+    for (int i=1;i<=n;i++){
+        if (cost>3000){
+            discount=cost*0.08;
+            total1=cost-discount;
+        }
+        else {
+            total1=0;
+        }
+            if (n<=3000){
+            total=cost;
+            }
+            
+        }
+        total=n*(total);
+        cout<<"discount cost per client is "<<total1<<endl;
+        cout<<"total amount is "<<total<<endl;
+    return 0;
+}
